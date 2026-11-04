@@ -35,7 +35,7 @@ function registrarLog(PDO $pdo, string $operacion, bool $enTransaccion = false):
         $stmt->execute([':usuario' => $usuario, ':operacion' => $operacion]);
 
         // Consumir los posibles resultsets del CALL para no bloquear la conexión
-        while ($stmt->nextRowset()) { /* vacío */ }
+        while ($stmt->nextRowset()) { }
         $stmt->closeCursor();
 
         if (!$enTransaccion && $pdo->inTransaction()) {
