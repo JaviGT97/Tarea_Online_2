@@ -33,7 +33,8 @@ function validarEntero($valor): ?int
 function validarLongitud(?string $texto, int $min = 1, int $max = 255): bool
 {
     $texto = filtrarTexto($texto);
-    return $texto !== '' && mb_strlen($texto) <= $max;
+    // Comprueba que la longitud esté ENTRE el mínimo y el máximo
+    return mb_strlen($texto) >= $min && mb_strlen($texto) <= $max;
 }
 
 /** Convierte '<' '>' en entidades: para previsualizar contenido en formularios. */
