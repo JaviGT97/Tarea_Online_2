@@ -15,7 +15,7 @@ function obtenerCategorias(PDO $pdo): array
 /** CKEditor 5 (Ejercicio 2.10) - <script> a incluir en el pie. */
 function scriptCKEditor(): void
 {
-    echo '<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+    echo '<script src="assets/vendor/js/ckeditor5-classic.js"></script>
 <script>
     // Registro global de instancias (útil para sincronizar el textarea / Testing)
     window.ckeditorInstances = window.ckeditorInstances || [];

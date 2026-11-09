@@ -14,10 +14,10 @@ $tituloPagina = $tituloPagina ?? 'Mi pequeño Blog';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= limpiar($tituloPagina) ?> | Mi pequeño Blog</title>
-    <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap 4 CSS (local, funciona sin internet) -->
+    <link rel="stylesheet" href="assets/vendor/css/bootstrap.min.css">
     <!-- Bootstrap Icons (para los iconos de ordenación, Ej. 2.12) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
     <style>
         body { background-color: #f5f6fa; padding-top: 70px; }
         .navbar-tarea { background-color: #343a40; }

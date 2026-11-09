@@ -43,6 +43,8 @@ try {
 } catch (PDOException $e) {
     die('Error: ' . htmlspecialchars($e->getMessage()));
 }
+
+require_once __DIR__ . '/inc/header.php';
 ?>
 <h1 class="h3 mb-3"><i class="bi bi-people"></i> Usuarios (<?= $totalRegistros ?>) <span class="badge badge-warning">s&oacute;lo admin</span></h1>
 
