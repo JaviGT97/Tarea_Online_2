@@ -9,11 +9,11 @@
  */
 require_once __DIR__ . '/config/conexion.php';
 require_once __DIR__ . '/config/config.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/helpers/log.php';
-require_once __DIR__ . '/helpers/entradas.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/funciones/log.php';
+require_once __DIR__ . '/funciones/entradas.php';
 
 requerirLogin();
 
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $tituloPagina = 'Nueva entrada';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="card card-borde">
     <div class="card-header bg-dark text-white"><i class="bi bi-plus-circle"></i> Nueva entrada</div>
@@ -117,5 +117,5 @@ require_once __DIR__ . '/inc/header.php';
     </div>
 </div>
 <?php
-require_once __DIR__ . '/inc/footer.php';
+require_once __DIR__ . '/plantillas/footer.php';
 scriptCKEditor();

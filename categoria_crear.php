@@ -4,9 +4,9 @@
  * Se usa la misma página para crear (sin id) y editar (con id).
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/log.php';
 
 requerirAdmin();
 
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $tituloPagina = $editando ? 'Editar categoría' : 'Nueva categoría';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="row justify-content-center">
     <div class="col-md-5">
@@ -79,4 +79,4 @@ require_once __DIR__ . '/inc/header.php';
         </div>
     </div>
 </div>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

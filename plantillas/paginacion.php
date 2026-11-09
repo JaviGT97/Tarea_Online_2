@@ -4,7 +4,7 @@
  *   selector de nº de páginas/regímenes: #Págs + RegXPág + "Ir a pág".
  * Parámetros: $pagina, $totalPaginas, $porPagina, $urlBase y $params (array de query string).
  */
-require_once __DIR__ . '/../helpers/saneamiento.php';
+require_once __DIR__ . '/../funciones/saneamiento.php';
 
 function dibujarPaginacion(int $pagina, int $totalPaginas, int $porPagina, string $urlBase, array $params = []): void
 {

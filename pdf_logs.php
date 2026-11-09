@@ -2,9 +2,9 @@
 /**
  * Ejercicio 2.14 - PDF con el contenido de los logs de la aplicación.
  */
-require_once __DIR__ . '/inc/pdf.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/sesion.php';
+require_once __DIR__ . '/plantillas/pdf.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/sesion.php';
 
 $pdo = pdfArrancarApp(true);   // sólo perfil admin
 

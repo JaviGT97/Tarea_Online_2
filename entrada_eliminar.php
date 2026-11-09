@@ -5,9 +5,9 @@
  * Ejercicio 2.13 - Registro de la operación en 'logs' (procedimiento BD).
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/funciones/log.php';
 
 requerirLogin();
 

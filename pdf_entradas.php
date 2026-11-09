@@ -3,9 +3,9 @@
  * Ejercicio 2.11 - Impresión del listado de entradas en PDF (FPDF).
  * Respeta la ordenación (asc/desc) y los filtros del listado de la página index.php.
  */
-require_once __DIR__ . '/inc/pdf.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/sesion.php';
+require_once __DIR__ . '/plantillas/pdf.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/sesion.php';
 
 $pdo = pdfArrancarApp();
 

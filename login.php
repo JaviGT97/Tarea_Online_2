@@ -4,8 +4,8 @@
  * Ejercicio 2.3 - Validación, sanitización y filtrado de los datos del formulario.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
 
 $errores  = [];
 $nick     = '';
@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $tituloPagina = 'Acceso';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="row justify-content-center">
     <div class="col-md-5">
@@ -80,4 +80,4 @@ require_once __DIR__ . '/inc/header.php';
         </div>
     </div>
 </div>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

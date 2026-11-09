@@ -5,10 +5,10 @@
  */
 require_once __DIR__ . '/config/conexion.php';
 require_once __DIR__ . '/config/config.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/funciones/log.php';
 
 requerirAdmin();
 
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $tituloPagina = 'Crear usuario';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="card card-borde">
     <div class="card-header bg-dark text-white"><i class="bi bi-person-plus"></i> Crear usuario</div>
@@ -112,4 +112,4 @@ require_once __DIR__ . '/inc/header.php';
         </form>
     </div>
 </div>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

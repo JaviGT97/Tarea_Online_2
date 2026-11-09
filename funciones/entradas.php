@@ -4,7 +4,7 @@
  * de entradas (formularios del Ejercicio 2.3 + CKEditor Ej. 2.10).
  */
 require_once __DIR__ . '/../config/conexion.php';
-require_once __DIR__ . '/../helpers/saneamiento.php';
+require_once __DIR__ . '/../funciones/saneamiento.php';
 
 /** Devuelve las categorías para el SELECT del formulario. */
 function obtenerCategorias(PDO $pdo): array

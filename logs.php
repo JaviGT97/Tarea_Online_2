@@ -5,9 +5,9 @@
  * Sólo perfil 'admin'.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/inc/paginacion.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/plantillas/paginacion.php';
 
 requerirAdmin();  // los usuarios → index.php?cod=sinpermisos
 $tituloPagina = 'Logs';
@@ -40,7 +40,7 @@ try {
     die('Error: ' . htmlspecialchars($e->getMessage()));
 }
 
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <h1 class="h3 mb-3"><i class="bi bi-clock-history"></i> Registro de operaciones &mdash; logs (<?= $totalRegistros ?>) <span class="badge badge-warning">s&oacute;lo admin</span></h1>
 
@@ -88,4 +88,4 @@ require_once __DIR__ . '/inc/header.php';
 </table>
 </div>
 <?php dibujarPaginacion($pagina, $totalPaginas, $porPagina, 'logs.php', ['q' => $busqueda]); ?>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

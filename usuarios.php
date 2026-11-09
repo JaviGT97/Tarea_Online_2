@@ -5,10 +5,10 @@
  * Ejercicio 2.6 - Eliminación con modal y comprobación de registros relacionados.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/inc/paginacion.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/plantillas/paginacion.php';
 
 requerirAdmin();
 $tituloPagina = 'Usuarios';
@@ -44,7 +44,7 @@ try {
     die('Error: ' . htmlspecialchars($e->getMessage()));
 }
 
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <h1 class="h3 mb-3"><i class="bi bi-people"></i> Usuarios (<?= $totalRegistros ?>) <span class="badge badge-warning">s&oacute;lo admin</span></h1>
 
@@ -102,4 +102,4 @@ require_once __DIR__ . '/inc/header.php';
 </table>
 </div>
 <?php dibujarPaginacion($pagina, $totalPaginas, $porPagina, 'usuarios.php', ['q' => $busqueda]); ?>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

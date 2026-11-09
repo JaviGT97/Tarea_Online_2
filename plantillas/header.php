@@ -3,8 +3,8 @@
  * "Mi pequeño Blog" - Plantilla común: cabecera + menú (Bootstrap 4).
  * Variables opcionales antes del include: $titulo or $_tituloPagina, $ocultarMenu
  */
-require_once __DIR__ . '/../helpers/sesion.php';
-require_once __DIR__ . '/../helpers/saneamiento.php';
+require_once __DIR__ . '/../funciones/sesion.php';
+require_once __DIR__ . '/../funciones/saneamiento.php';
 
 $tituloPagina = $tituloPagina ?? 'Mi pequeño Blog';
 ?>

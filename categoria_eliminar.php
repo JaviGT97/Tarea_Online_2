@@ -4,8 +4,8 @@
  * No se podra eliminar si tiene entradas relacionadas (FK RESTRICT).
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/log.php';
 
 requerirAdmin();
 

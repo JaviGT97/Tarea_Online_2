@@ -3,9 +3,9 @@
  * Ejercicio 2.7 - Detalle completo de un usuario (con listado de sus entradas).
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
 
 requerirAdmin();
 
@@ -31,7 +31,7 @@ try {
 }
 
 $tituloPagina = 'Detalle de usuario';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="row justify-content-center">
     <div class="col-lg-9">
@@ -86,4 +86,4 @@ require_once __DIR__ . '/inc/header.php';
         </div>
     </div>
 </div>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

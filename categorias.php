@@ -4,8 +4,8 @@
  * Los usuarios no administradores sólo pueden consultar.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
 
 requerirLogin();
 
@@ -20,7 +20,7 @@ try {
 }
 
 $tituloPagina = 'Categorías';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <h1 class="h3 mb-3"><i class="bi bi-tags"></i> Categor&iacute;as (<?= count($categorias) ?>)</h1>
 
@@ -59,4 +59,4 @@ require_once __DIR__ . '/inc/header.php';
 </table>
 </div>
 <p class="text-muted small"><i class="bi bi-shield-lock"></i> S&oacute;lo el perfil <b>admin</b> puede crear, editar o eliminar categor&iacute;as.</p>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

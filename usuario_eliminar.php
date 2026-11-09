@@ -5,9 +5,9 @@
  * se controla con comprobación previa y con la restricción FK de la BD.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/funciones/log.php';
 
 requerirAdmin();
 

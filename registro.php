@@ -7,10 +7,10 @@
  */
 require_once __DIR__ . '/config/conexion.php';
 require_once __DIR__ . '/config/config.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/helpers/log.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/funciones/log.php';
 
 $errores = [];
 $nombre = $apellido = $email = $nick = '';
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $tituloPagina = 'Registro';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="row justify-content-center">
     <div class="col-md-7">
@@ -134,4 +134,4 @@ require_once __DIR__ . '/inc/header.php';
         </div>
     </div>
 </div>
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

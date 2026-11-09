@@ -9,10 +9,10 @@
  * Ejercicio 2.12 - Ordenación asc/desc por fecha mediante iconos en la cabecera.
  */
 require_once __DIR__ . '/config/conexion.php';
-require_once __DIR__ . '/helpers/sesion.php';
-require_once __DIR__ . '/helpers/saneamiento.php';
-require_once __DIR__ . '/helpers/imagenes.php';
-require_once __DIR__ . '/inc/paginacion.php';
+require_once __DIR__ . '/funciones/sesion.php';
+require_once __DIR__ . '/funciones/saneamiento.php';
+require_once __DIR__ . '/funciones/imagenes.php';
+require_once __DIR__ . '/plantillas/paginacion.php';
 
 requerirLogin();
 
@@ -69,7 +69,7 @@ $paramsUrl = array_filter(['orden' => strtolower($orden), 'categoria' => $filtro
                           fn($v) => $v !== null && $v !== false);
 
 $tituloPagina = 'Entradas';
-require_once __DIR__ . '/inc/header.php';
+require_once __DIR__ . '/plantillas/header.php';
 ?>
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h1 class="h3 mb-0"><i class="bi bi-journal-text"></i> Entradas del blog (<?= $totalRegistros ?>)</h1>
@@ -164,4 +164,4 @@ require_once __DIR__ . '/inc/header.php';
 
 <?php dibujarPaginacion($pagina, $totalPaginas, $porPagina, 'index.php', $paramsUrl); ?>
 
-<?php require_once __DIR__ . '/inc/footer.php'; ?>
+<?php require_once __DIR__ . '/plantillas/footer.php'; ?>

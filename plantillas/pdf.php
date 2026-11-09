@@ -4,7 +4,7 @@
  * Diapositiva de portada + tabla de registros con estilo del listado web.
  */
 require_once __DIR__ . '/../fpdf/fpdf.php';
-require_once __DIR__ . '/../helpers/sesion.php';
+require_once __DIR__ . '/../funciones/sesion.php';
 
 class PDF_Listado extends FPDF
 {
